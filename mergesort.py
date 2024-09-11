@@ -48,9 +48,9 @@ def merge_sort(arr, left, right):
         merge(arr, left, mid, right)
 
 
-with open("dataordenado.txt", "r") as file:
-    contenido = file.read()
-    numeros = [int(num) for num in contenido.split()]
+with open("dataordenado.txt", "r") as archivo:
+    leer = archivo.read()
+    numeros = [int(n) for n in leer.split()]
 inicio = time.time()
 merge_sort(numeros, 0, len(numeros) - 1)
 final = time.time()
