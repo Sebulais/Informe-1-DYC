@@ -29,4 +29,5 @@ def multiplicar_matrices(m1, m2):
         return m3
 result= multiplicar_matrices(A,B)
 final = time.time()
+print(result)
 print(final - inicio)
