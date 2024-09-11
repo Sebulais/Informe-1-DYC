@@ -14,12 +14,13 @@ def bubble_sort(arr):
 
 inicio = time.time()
 
-with open("datasetOrdenado.txt", "r") as file:
-    contenido = file.read()
-    numeros = [int(num) for num in contenido.split()]
+with open("dataordenado.txt", "r") as archivo:
+    leer = archivo.read()
+    numeros = [int(num) for num in leer.split()]
 
 bubble_sort(numeros)
 
 fin = time.time()
 tiempo = fin - inicio
+print(numeros)
 print(tiempo)
