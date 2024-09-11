@@ -38,11 +38,12 @@ def partition(arr,start,stop):
             arr[i - 1] , arr[pivot]
     pivot = i - 1
     return (pivot)
-with open("datasetDesordenado.txt", "r") as file:
-    contenido = file.read()
-    numeros = [int(num) for num in contenido.split()]
+with open("datasetDesordenado.txt", "r") as archivo:
+    leer = archivo.read()
+    numeros = [int(n) for n in leer.split()]
 inicio = time.time()
 quicksort(numeros, 0, len(numeros) - 1)
 final = time.time()
+print(numeros)
 print(final-inicio)
 
